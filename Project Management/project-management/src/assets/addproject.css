@@ -1,0 +1,158 @@
+/* ================== Global Styles ================== */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e6e6fa, #d8b4f8); /* Lavender gradient */
+  overflow-x: hidden;
+}
+
+/* ================== Form Wrapper ================== */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 20px 20px; /* Top padding increased for gap */
+}
+
+/* ================== Form Container ================== */
+.form-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 10px 20px rgba(100, 0, 200, 0.1), 0 4px 8px rgba(100, 0, 200, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ================== Border Gradient ================== */
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #b68adb, #6a00f4);
+  z-index: -1;
+}
+
+/* ================== Form Title ================== */
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  color: #6a00f4;
+  margin-bottom: 20px;
+}
+
+/* ================== Form Group ================== */
+.form-group {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #6a00f4;
+}
+/* ================== Custom Dropdown for Select with Icon ================== */
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f9f9ff; /* Background inside dropdown */
+  color: #6a00f4; /* Text color */
+  border: 1px solid #b68adb;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background: url("data:image/svg+xml,%3Csvg fill='purple' height='18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")
+    no-repeat right 12px center;
+  background-size: 18px;
+  padding-right: 35px; /* Space for icon */
+}
+
+
+/* Dropdown open - for custom scrollbar & highlight */
+.form-group select option {
+  background-color: #e6e6fa; /* Lavender background */
+  color: #6a00f4; /* Text color for options */
+}
+
+/* Highlighted Option */
+.form-group select option:checked,
+.form-group select option:hover {
+  background-color: #b68adb; /* Highlight with theme color */
+  color: white; /* White text on hover/select */
+}
+
+/* ================== Input and Select ================== */
+.form-group input,
+.form-group select,
+.description {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b68adb;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f9f9ff;
+  color: #333;
+  transition: 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus,
+.description:focus {
+  outline: none;
+  border-color: #6a00f4;
+  box-shadow: 0 0 10px rgba(106, 0, 244, 0.4);
+}
+
+/* ================== Textarea (Description) ================== */
+.description {
+  height: 120px;
+  resize: vertical;
+}
+
+/* ================== Submit Button ================== */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff006e, #6a00f4);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #6a00f4, #ff006e);
+  box-shadow: 0 0 15px rgba(255, 0, 110, 0.8);
+}
+
+/* ================== Responsive Design ================== */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,195 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #f3e8ff; /* Lavender and Pink Theme */
+  overflow-x: hidden; /* Can be removed if layout breaks */
+}
+
+/* Home Container */
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(243, 232, 255, 0.9);
+  text-align: center;
+  padding-top: 80px; /* Prevent navbar from overlapping */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #d8b4fe, #f9a8d4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7e22ce; /* Deep Purple */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Fix buttons overflowing issue */
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #a855f7, #d946ef);
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(90deg, #d946ef, #ff77b9);
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%; /* Prevents horizontal scroll issues */
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #f3e8ff, #ffdbf1);
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+  background: linear-gradient(90deg, #a855f7, #d946ef);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #d946ef, #ff77b9);
+  transform: scale(1.1);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f3e8ff;
+}
+
+.testimonials-section h2 {
+  color: #a855f7;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #ffdbf1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* FAQs Section */
+.faqs-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+}
+
+.faq-1, .cnt {
+  color: #a855f7;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  text-align: left;
+}
+
+.faq h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.faq p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Contact Section */
+.contact-section {
+  width: 100%;
+  padding: 40px;
+  background: #ffdbf1;
+  color: black;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding-top: 90px;
+  }
+
+  .hero-content {
+    width: 90%;
+  }
+
+  .navbar {
+    padding: 15px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

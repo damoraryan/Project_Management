@@ -1,0 +1,102 @@
+/* 🌸 Full Screen Container with Lavender Gradient */
+.add-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh; /* Full page height */
+  /* background: linear-gradient(135deg, #e9d5ff, #fce7f3); Lavender gradient */
+  padding-top: 70px; /* Navbar ke neeche shift */
+  overflow-y: auto;
+}
+
+/* 📦 Form Box with Full Width and Shadow */
+.add-task-box {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(106, 0, 244, 0.2);
+  margin-top: 20px;
+}
+
+/* 🎯 Page Title Styling */
+.add-task-title {
+  text-align: center;
+  font-size: 26px;
+  color: #6a00f4; /* Neon Purple */
+  margin-bottom: 20px;
+}
+
+/* ✅ Input Container with Margin */
+.input-container {
+  margin-bottom: 18px;
+}
+
+/* 🎨 Input Label Styling */
+.input-label {
+  font-size: 14px;
+  color: #6a00f4;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* 🌸 Input and Select Fields */
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d8b4fe;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  font-size: 14px;
+}
+
+/* ✨ Focus Effect */
+.input-field:focus,
+.textarea-field:focus {
+  box-shadow: 0 0 12px rgba(106, 0, 244, 0.5);
+}
+
+/* 📝 Textarea Field Height */
+.textarea-field {
+  height: 100px;
+  resize: none;
+}
+
+/* 🚨 Error Message */
+.error-message {
+  font-size: 12px;
+  color: #ff006e;
+  margin-top: 4px;
+}
+
+/* 🚀 Submit Button */
+.update-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #6a00f4, #ff006e);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ✨ Button Hover Effect */
+.update-btn:hover {
+  box-shadow: 0 0 15px rgba(106, 0, 244, 0.8);
+}
+
+/* 📱 Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .add-task-box {
+    width: 95%;
+    padding: 20px;
+  }
+}

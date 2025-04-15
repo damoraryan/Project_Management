@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+
+/* 🌟 404 Page Container (Scoped to Avoid Conflicts) */
+.notfound-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: "Arvo", serif;
+}
+/* 📚 404 Wrapper (Now with Solid Background) */
+.notfound-wrapper {
+  text-align: center;
+  background: white; /* Solid background */
+  padding: 40px;
+  
+  max-width: 600px;
+  width: 100%;
+  
+  
+}
+
+
+/* 🎥 404 Image */
+.notfound-image {
+  height: 350px;
+  width: 100%;
+  background-image: url("https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
+}
+
+/* 🔥 404 Title */
+.notfound-title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #6a00f4;
+  margin-bottom: 10px;
+}
+
+/* 🎯 Content Box */
+.notfound-text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* 📝 Heading & Paragraph */
+.notfound-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.notfound-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* 🚀 Button */
+.notfound-btn {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #6a00f4, #ff006e);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(106, 0, 244, 0.5);
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* 🎨 Button Hover */
+.notfound-btn:hover {
+  background: linear-gradient(90deg, #ff006e, #6a00f4);
+  box-shadow: 0 0 15px rgba(255, 0, 110, 0.8);
+}
+
+/* 🎥 Image Inside */
+.notfound-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* 🚀 Ensure It Doesn't Override Other Styles */
+.notfound-container .app-wrapper {
+  all: unset;
+}

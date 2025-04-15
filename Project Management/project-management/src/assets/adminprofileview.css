@@ -1,0 +1,220 @@
+/* Ensure full-page height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper for centering the profile container */
+.admin-profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* Ensures it takes full screen */
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Profile container style */
+.admin-profile-container {
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  opacity: 0;
+  animation: slideIn 0.8s forwards;
+  position: relative; /* Prevents unexpected overlap */
+  z-index: 10; /* Keeps it on top if needed */
+}
+
+/* Profile title style */
+.admin-profile-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6a8f7d;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Profile details */
+.admin-profile-details {
+  text-align: left;
+  color: #6a8f7d;
+  line-height: 1.6;
+}
+
+/* Paragraph inside profile details */
+.admin-profile-details p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Highlight labels */
+.admin-profile-details strong {
+  color: #6a8f7d;
+  font-weight: bold;
+}
+
+/* Toastify notifications */
+.Toastify__toast-container {
+  top: 10px;
+  right: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .admin-profile-container {
+      width: 90%;
+      padding: 20px;
+  }
+  .admin-profile-title {
+      font-size: 1.5rem;
+  }
+  .admin-profile-details p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-profile-container {
+      width: 95%;
+      padding: 15px;
+  }
+  .admin-profile-title {
+      font-size: 1.3rem;
+  }
+  .admin-profile-details p {
+      font-size: 0.9rem;
+  }
+}
+/* Ensure full-page height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper for centering the profile container */
+.admin-profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* Ensures it takes full screen */
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  
+}
+
+/* Profile container (Card) */
+.admin-profile-container {
+  background: #ffffff; /* 🏳️ Pure white background */
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0px 4px 15px rgba(106, 0, 244, 0.3); /* Soft lavender shadow */
+  text-align: center;
+  color: #6a00f4; /* 🌸 Lavender text */
+  opacity: 0;
+  animation: slideIn 0.8s forwards;
+  position: relative;
+  z-index: 10;
+}
+
+/* Profile title style */
+.admin-profile-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6a00f4; /* Lavender heading */
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Profile details */
+.admin-profile-details {
+  text-align: left;
+  color: #6a00f4; /* Lavender text */
+  line-height: 1.6;
+}
+
+/* Paragraph inside profile details */
+.admin-profile-details p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Highlight labels */
+.admin-profile-details strong {
+  color: #ff006e; /* 🔥 Slightly pink highlight for contrast */
+  font-weight: bold;
+}
+
+/* Toastify notifications */
+.Toastify__toast-container {
+  top: 10px;
+  right: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .admin-profile-container {
+      width: 90%;
+      padding: 20px;
+  }
+  .admin-profile-title {
+      font-size: 1.5rem;
+  }
+  .admin-profile-details p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-profile-container {
+      width: 95%;
+      padding: 15px;
+  }
+  .admin-profile-title {
+      font-size: 1.3rem;
+  }
+  .admin-profile-details p {
+      font-size: 0.9rem;
+  }
+}

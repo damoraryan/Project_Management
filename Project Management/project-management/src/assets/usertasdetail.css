@@ -1,0 +1,125 @@
+/* 🌸 Lavender Theme CSS */
+.assign-task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e9d5ff, #c4b5fd);
+    padding: 20px;
+  }
+  
+  /* 📦 Form Box */
+  .assign-task-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(106, 0, 244, 0.3);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* 🎯 Title */
+  .assign-task-title {
+    font-size: 1.8rem;
+    color: #6a00f4;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* 📝 Input Container */
+  .input-container {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 🏷️ Labels */
+  .input-label {
+    font-size: 1rem;
+    color: #6a00f4;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* 🔽 Input Fields */
+  .input-field {
+    padding: 12px;
+    border: 1px solid #c084fc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f5f3ff;
+    color: #4c1d95;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🔽 Disabled State */
+  .input-field:disabled {
+    background: #e9d5ff;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  /* 🚨 Error Messages */
+  .error-message {
+    color: #ef4444;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  /* 🚀 Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #7e22ce, #6a00f4);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(106, 0, 244, 0.5);
+  }
+  
+  /* 🎨 Button Hover Effect */
+  .submit-button:hover {
+    background: linear-gradient(135deg, #9333ea, #6a00f4);
+    box-shadow: 0 0 15px rgba(106, 0, 244, 0.8);
+    transform: scale(1.05);
+  }
+  
+  /* ✨ Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 600px) {
+    .assign-task-box {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .assign-task-title {
+      font-size: 1.5rem;
+    }
+  
+    .input-label,
+    .input-field {
+      font-size: 0.95rem;
+    }
+  
+    .submit-button {
+      font-size: 0.95rem;
+    }
+  }
+  

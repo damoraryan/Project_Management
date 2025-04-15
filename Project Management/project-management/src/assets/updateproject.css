@@ -1,0 +1,129 @@
+/* Main Container */
+.update-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Card Style */
+.update-card {
+  background: white;
+  width: 80%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.update-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a00f4; /* Lavender Main Color */
+  margin-bottom: 20px;
+}
+
+/* ================== Custom Dropdown with Icon (Force Apply) ================== */
+.form-group select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-color: #f9f9ff !important;
+  color: #6a00f4 !important;
+  border: 1px solid #b68adb !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  background: url("data:image/svg+xml,%3Csvg fill='purple' height='18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E")
+    no-repeat right 12px center !important;
+  background-size: 18px !important;
+  padding-right: 35px !important; /* Space for icon */
+}
+
+
+/* Label */
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input and Select Style */
+.update-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1c4e9;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background-color: #f3e5f5; /* Light Lavender BG */
+  color: #333;
+  transition: 0.3s;
+}
+
+/* Input Focus */
+.update-input:focus {
+  border-color: #6a00f4;
+  box-shadow: 0 0 8px rgba(106, 0, 244, 0.3);
+}
+
+/* Button Style */
+.update-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff006e, #6a00f4);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.update-btn:hover {
+  background: linear-gradient(90deg, #6a00f4, #ff006e);
+  box-shadow: 0 0 15px rgba(255, 0, 110, 0.8);
+}
+
+/* Navbar Margin Fix */
+.navbar {
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #6a00f4;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #f9f9ff;
+  color: #6a00f4;
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 0, 244, 0.6);
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #ff006e;
+  box-shadow: 0 0 10px rgba(255, 0, 110, 0.8);
+}
+
+/* Dropdown Arrow Fix */
+select.form-input {
+  appearance: none; /* Cross-browser support */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg fill='purple' height='20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")
+    no-repeat right 10px center;
+  background-size: 15px;
+  padding-right: 30px; /* For arrow space */
+  cursor: pointer;
+}

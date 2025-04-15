@@ -1,0 +1,40 @@
+.view-team-container {
+  padding: 20px 50px;
+  /* background: #f9f9ff; */
+  min-height: 100vh;
+  margin-top: 70px; /* ✔️ Add margin to push down the content */
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4b0082;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center; /* Optional: Center title if needed */
+  font-size: 1.8rem;
+  color: #6a00f4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.team-box {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(156, 163, 175, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.team-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(96, 165, 250, 0.5);
+}

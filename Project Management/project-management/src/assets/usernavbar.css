@@ -1,0 +1,103 @@
+/* Navbar */
+.user-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #d8b4fe, #f9a8d4);
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(168, 85, 247, 0.5);
+  position: fixed;
+  width: calc(100% - 250px);
+  left: 250px;
+  top: 0;
+  height: 60px;
+  z-index: 1000; /* Navbar always above */
+}
+
+/* Navbar Logo */
+.logo-user {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7e22ce;
+  text-shadow: 0 0 5px #c084fc;
+}
+
+/* Navbar Icons */
+.nav-icons-user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-user {
+  font-size: 22px;
+  cursor: pointer;
+  color: #7e22ce;
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.icon-user:hover {
+  color: #ff80bf;
+  transform: scale(1.1);
+  text-shadow: 0 0 5px #ff80bf;
+}
+
+/* Dropdown Styles */
+/* Fix parent div so dropdown renders properly */
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  min-width: 160px;
+  text-align: left;
+  z-index: 1050; /* Fix z-index issue */
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ensure dropdown is visible when state is true */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Dropdown item styles */
+.dropdown-menu p {
+  padding: 10px 15px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown-menu p:hover {
+  background: #f3e8ff;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-5px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

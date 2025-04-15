@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.unauthorized-container {
+    position: relative;
+    height: 100vh;
+    background: black;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Creepster', cursive;
+    overflow: hidden;
+}
+
+.unauthorized-container h1 {
+    font-size: 3rem;
+    text-shadow: 4px 4px 20px red;
+    animation: glitch 1s infinite alternate;
+}
+
+.unauthorized-container p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 10px red;
+    opacity: 0.8;
+}
+
+/* 🔥 Multiple Scary Ghosts */
+.ghost {
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    background: url('https://i.imgur.com/2b8QHwx.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0;
+    z-index: 99;
+}
+
+/* Ghost 1 (Left to Right) */
+.ghost1 {
+    top: 30%;
+    left: -100px;
+    animation: ghostMove1 8s infinite ease-in-out, ghostFade 4s infinite alternate, glitch 1s infinite alternate;
+}
+
+@keyframes ghostMove1 {
+    0% { transform: translateX(-100px); }
+    50% { transform: translateX(300px); }
+    100% { transform: translateX(-100px); }
+}
+
+/* Ghost 2 (Right to Left) */
+.ghost2 {
+    top: 60%;
+    right: -100px;
+    animation: ghostMove2 10s infinite ease-in-out, ghostFade 5s infinite alternate, glitch 1s infinite alternate;
+}
+
+@keyframes ghostMove2 {
+    0% { transform: translateX(100px); }
+    50% { transform: translateX(-300px); }
+    100% { transform: translateX(100px); }
+}
+
+/* Ghost 3 (Floating Top) */
+.ghost3 {
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ghostMove3 12s infinite ease-in-out, ghostFade 6s infinite alternate, glitch 1s infinite alternate;
+}
+
+@keyframes ghostMove3 {
+    0% { transform: translateY(-50px); }
+    50% { transform: translateY(100px); }
+    100% { transform: translateY(-50px); }
+}
+
+/* Ghost fade-in & out */
+@keyframes ghostFade {
+    0% { opacity: 0; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0; }
+}
+
+/* Creepy Glitch Effect */
+@keyframes glitch {
+    0% { filter: blur(2px); transform: skewX(2deg); }
+    100% { filter: blur(4px); transform: skewX(-2deg); }
+}
+
+/* Scary Back Button */
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: red;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px red;
+    animation: pulse 1.5s infinite;
+}
+
+.back-btn:hover {
+    background: darkred;
+    box-shadow: 0 0 20px red;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}

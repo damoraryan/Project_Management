@@ -1,0 +1,101 @@
+/* Signup Page Styles - Mecha Madness Theme */
+.signup-mecha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0a0f1f; /* Dark futuristic background */
+}
+
+.signup-mecha-card {
+  background: rgba(10, 15, 31, 0.95);
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+}
+
+/* Removed the brand-logo */
+.signup-mecha-brand h1 {
+  color: #00f5d4;
+  text-shadow: 0 0 10px #00f5d4;
+  margin-bottom: 5px;
+}
+
+.signup-mecha-brand p {
+  color: #b8c6db;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.signup-mecha-form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.signup-mecha-form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #00eaff; /* Aqua Blue */
+}
+
+.signup-mecha-form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #00eaff;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #1a1d2e; /* Deep Blue */
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
+.signup-mecha-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #00f5d4, #00eaff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8) !important;
+  text-align: center !important;
+  margin-top: 1rem !important;
+}
+
+.signup-mecha-btn:hover {
+  background: linear-gradient(90deg, #00eaff, #00f5d4) !important;
+  box-shadow: 0 0 20px #00eaff !important;
+  transform: translateY(-2px) !important;
+}
+
+.signup-mecha-btn:active {
+  transform: translateY(0) !important;
+}
+
+.signup-mecha-link p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: white;
+}
+
+.signup-mecha-link a {
+  color: #00f5d4;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 0 5px #00f5d4;
+}
+
+.signup-mecha-link a:hover {
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+}

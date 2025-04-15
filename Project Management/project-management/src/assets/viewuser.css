@@ -1,0 +1,54 @@
+/* 🎨 View Users Styling */
+.view-users-container {
+    padding: 20px;
+    background: #f9f9ff; /* Light Background */
+    min-height: 100vh;
+    text-align: center;
+    margin-top: 80px; /* 👈 Adjust this value based on your navbar height */
+  }
+  
+  /* Users Title */
+  .view-users-container h2 {
+    font-size: 1.8rem;
+    color: #6a00f4;
+    margin-bottom: 20px;
+  }
+  /* 📌 User Grid */
+  .user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* 📌 User Box */
+  .user-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(106, 0, 244, 0.2);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .user-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(106, 0, 244, 0.4);
+  }
+  
+  /* 📌 Responsive Design */
+  @media (max-width: 768px) {
+    .view-users-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .user-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .user-box {
+      padding: 15px;
+    }
+  }
+  

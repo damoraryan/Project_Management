@@ -1,0 +1,152 @@
+/* 📌 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 📌 Force Full Page Height */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+ 
+}
+
+/* 🚀 Sidebar Styling */
+.sidebar {
+  width: 270px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  
+  padding-top: 80px;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Main Wrapper (Fix Alignment) */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 270px;
+  width: calc(100vw - 270px);
+  min-height: 100vh;
+  padding: 80px;
+}
+
+/* 🚀 Profile Page Fix */
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+/* 📌 Profile Container */
+.profile-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(106, 0, 244, 0.3);
+  width: 100%;
+  max-width: 750px !important; /* 🔥 Fix width */
+  min-height: 700px;
+  animation: fadeIn 0.5s ease-in-out;
+  position: relative;
+}
+
+/* ✅ Profile Heading */
+.profile-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #6a00f4;
+  margin-bottom: 20px;
+}
+
+/* ✅ Profile Form Inputs */
+.profile-container input,
+.profile-container textarea {
+  border: 2px solid #6a00f4 !important;
+ 
+  font-size: 16px !important;
+  width: 100% !important;
+  padding: 10px !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* ✅ Textarea Fix */
+.profile-container textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* ✅ Labels */
+.profile-container label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6a00f4;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 🚀 Profile Buttons */
+.profile-btn {
+  width: 100%;
+  background: #6a00f4;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  background: #5400c2;
+}
+
+/* ✅ Scrollbar Fix */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6a00f4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0aaff;
+}
+
+/* 🎯 Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+  
+  .main-container {
+    margin-left: 80px;
+    width: calc(100vw - 80px);
+  }
+  
+  .profile-wrapper {
+    padding: 20px;
+  }
+  
+  .profile-container {
+    max-width: 95% !important;
+    padding: 30px;
+  }
+}
